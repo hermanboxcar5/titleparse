@@ -10,6 +10,10 @@ const parseTitle = (body) => {
   return match[1]
 }
 
+app.get('/', (req, res)=>{
+res.send('Hello')
+})
+
 app.get('/get', cors(), (req, res) => {
   
   const { url } = req.query
